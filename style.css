@@ -1,0 +1,23 @@
+body {
+	margin-left: 16px;
+	margin-top: 16px;
+}
+
+#new-item {
+	padding-bottom: 16px;
+}
+
+#page-01 {
+	padding-bottom: 16px;
+}
+
+th, td {
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+tbody tr td .input-wrapper {
+	padding-left: 16px;
+	padding-right: 16px;
+}
