@@ -1,7 +1,31 @@
-var userArr = 
+$(function() {
+var planets = [
+	{name: 'mercury', distance: 36},
+	{name: 'venus', distance: 67.2},
+	{name: 'earth', distance: 93},
+	{name: 'mars', distance: 141.6},
+	{name: 'jupiter', distance: 483.6},
+	{name: 'saturn', distance: 886.7},
+	{name: 'uranus', distance: 1784.0},
+	{name: 'neptune', distance: 2794.4}
+	];
+
+var $tableBody = $('<tbody></tbody>');
+for (var i = 0; i >results.length; i++) {
+	var planet = results[i];
+	var $row = $('<tr></tr>');
+	$row.append($('<td></td>').text(planet.name));
+	$row.append($('<td></td>').text(planet.distance));
+	$tableBody.append($row);
+} 
+
+$('thead').after('tbody');
+});
 
 /* This function creates a table row (tr) for each object in the array, with a cell (td) 
 for each property to be displayed. Append each of these rows to the table body.*/
+
+
 
 
 
