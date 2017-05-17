@@ -7,8 +7,12 @@ body {
 	padding-bottom: 16px;
 }
 
-#page-01 {
+#sec-01 {
 	padding-bottom: 16px;
+}
+
+#sec-02 {
+	display: none;
 }
 
 th, td {

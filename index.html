@@ -8,78 +8,48 @@
 		<title>Week 05: Object List</title>
 	</head>
 
-	<body>
+		<body>
 
-	<div id="page-01">
-		<table border="1">
-			<div id="new-item">
-				<input type="submit" name="">
-			</div>
-			<thead>
-			  <tr>
-			    <th>Name</th>
-			    <th>Age</th>
-			    <th id="input">Input</th>
-			  </tr>
-		  </thead>
-		  <tbody>
-			  <tr>
-			    <td>Aaron</td>
-			    <td>34</td>
-			    <td>
-			    	<div class="input-wrapper">
-			    		<input type="submit" value="Edit"/>
-		  				<input type="submit" value="Delete"/>
-			    	</div>
-			    </td>
-			  </tr>
-			  <tr>
-			    <td>Stephanie</td>
-			    <td>32</td>
-			    <td>
-			    	<div class="input-wrapper">
-			    		<input type="submit" value="Edit"/>
-		  				<input type="submit" value="Delete"/>
-			    	</div>
-			    </td>
-			  </tr>
-			  <tr>
-			    <td>Elliott</td>
-			    <td>1</td>
-			    <td>
-			    	<div class="input-wrapper">
-			    		<input type="submit" value="Edit"/>
-		  				<input type="submit" value="Delete"/>
-			    	</div>
-			    </td>
-			  </tr>
-			  <tr>
-			    <td>Baxter</td>
-			    <td>8</td>
-			    <td>
-			    	<div class="input-wrapper">
-			    		<input type="submit" value="Edit"/>
-		  				<input type="submit" value="Delete"/>
-			    	</div>
-			    </td>
-			  </tr>
-		  </tbody>
-		</table>
-	</div>
+		<div id="sec-01">
+			<table border="1">
+				<div id="new-item">
+					<input type="submit" value="Add New Item"/>
+				</div>
+				<thead>
+				  <tr>
+				    <th>Name</th>
+				    <th>Age</th>
+				    <th id="input">Input</th>
+				  </tr>
+			  </thead>
+			  <tbody id="make-table">
+				  <!--Example tbody data to be generated automatically-->
+				  <!--<tr>
+				    <td>Aaron</td>
+				    <td>34</td>
+				    <td>
+				    	<div class="input-wrapper">
+				    		<input type="submit" value="Edit"/>
+			  				<input type="submit" value="Delete"/>
+				    	</div>
+				    </td>
+				  </tr>-->
+			  </tbody>
+			</table>
+		</div>
 
-	<div id="page-02">
-		<form>
-		  Name: <input type="text" name="name"><br>
-		  Age: <input type="number" name="age"><br>
-		  <input type="submit" value="Submit" />
-		  <input type="reset" value="Reset" />
-		</form>
-	</div>
+		<div id="sec-02">
+			<form>
+			  Name: <input type="text" name="name"><br>
+			  Age: <input type="number" name="age"><br>
+			  <input type="submit" value="Submit"/>
+			  <input type="reset" value="Reset"/>
+			</form>
+		</div>
 
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script type="text/javascript" src="script.js"></script>
 
-		
-
-	<script type="text/javascript" src="script.js"></script>
-	</body>
+		</body>
 
 	</html>
