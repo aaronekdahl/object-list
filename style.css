@@ -3,17 +3,17 @@ body {
 	margin-top: 16px;
 }
 
-#new-item {
+#newItem {
 	padding-bottom: 16px;
 }
 
-#sec-01 {
+#sec01 {
 	padding-bottom: 16px;
 }
 
-/*#sec-02 {
+#sec02 {
 	display: none;
-}*/
+}
 
 th, td {
   text-align: center;
