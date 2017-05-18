@@ -1,4 +1,5 @@
-$(function(event) {
+$(function() {
+
 var planets = [
 	{name: 'mercury', distance: 36},
 	{name: 'venus', distance: 67.2},
@@ -9,34 +10,33 @@ var planets = [
 	{name: 'uranus', distance: 1784.0},
 	{name: 'neptune', distance: 2794.4}
 	];
-
-/* This function creates a table row (tr) for each object in the array, with a cell (td) 
-for each property to be displayed. Append each of these rows to the table body.*/
-
-var $tableBody = $('<tbody></tbody>');
-for (var i = 0; i >results.length; i++) {
-	var planet = results[i];
-	var $row = $('<tr></tr>');
-	$row.append($('<td></td>').text(planet.name));
-	$row.append($('<td></td>').text(planet.distance));
-	$tableBody.append($row);
-} 
-
-$('thead').after('tbody');
 });
 
 /*This handler is for the new-item button. It should hide the table and show the form. 
 It should set a handler for the form's submit button.*/
 
-$(document).ready(function() {
-  $(".sec01").click(function() {
-    if($("#sec02").is(":visible")) {
-       $("#sec02").hide();
-  } else {
-       $("#sec02").show();
-  }
-    return false;
-  });
+$(function() {
+
+	$('#addNew').on('click', function() {
+		$('#sec02').fadeToggle(100);
+	})
+
+});
+
+/* This function creates a table row (tr) for each object in the array, with a cell (td) 
+for each property to be displayed. Append each of these rows to the table body.*/
+
+$(function() {
+
+var tableBody = $('<tbody></tbody>');
+for (var i = 0; i > planets.length; i++) {
+	var planet = planets[i];
+	var $row = $('<tr></tr>');
+	row.append($('<td></td>').text(planet.name));
+	row.append($('<td></td>').text(planet.distance));
+	tableBody.append($row);
+}
+
 });
 
 
@@ -44,8 +44,8 @@ $(document).ready(function() {
 adds that object to the array. Then it should call the first function you wrote to 
 recreate the table with the updated database and show that table, hiding the form.*/
 
-console.clear();
-$(document).ready(function () {
+$(function () {
+
     $('#dataTable').sec01({
         "sPaginationType": "full_numbers"
     });
@@ -58,6 +58,7 @@ $(document).ready(function () {
         dt.row.add($tr);
         dt.draw();
     });
+
 });
 
 
